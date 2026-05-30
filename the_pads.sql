@@ -19,3 +19,33 @@ LOG ON (
 	MAXSIZE = 1024MB
 )
 GO
+
+USE HackerRank
+CREATE TABLE Occupations (
+	Name VARCHAR(255) NOT NULL,
+	Occupation VARCHAR(255) NOT NULL
+)
+ON FG_DATA
+GO
+
+INSERT INTO Occupations (Name, Occupation)
+VALUES 
+	('Julia', 'Actor'),
+	('Maria', 'Actor'),
+	('Meera', 'Singer'),
+	('Ashley', 'Professor'),
+	('Ketty', 'Professor'),
+	('Christeen', 'Professor'),
+	('Jane', 'Actor'),
+	('Britney', 'Professor'),
+	('Jenny', 'Doctor'),
+	('Priya', 'Singer'),
+	('Aamina', 'Doctor'),
+	('Belvet', 'Professor'),
+	('Eve', 'Actor'),
+	('Jennifer', 'Actor'),
+	('Samantha', 'Actor'),
+	('Priyanka', 'Professor'),
+	('Naomi', 'Professor'),
+	('Jenny', 'Singer')
+GO
