@@ -61,6 +61,15 @@ VALUES
 	('Jennifer', 'Actor'),
 	('Samantha', 'Actor'),
 	('Priyanka', 'Professor'),
-	('Naomi', 'Professor'),
-	('Jenny', 'Singer')
+	('Naomi', 'Professor')
+GO
+
+SELECT CONCAT(Name, '(', LEFT(Occupation, 1), ')')
+FROM Occupations
+ORDER BY Name
+GO
+SELECT CONCAT('There are a total of ', CAST(COUNT(*) AS VARCHAR), ' ', LOWER(Occupation) + 's.')
+FROM Occupations
+GROUP BY Occupation
+ORDER BY COUNT(Occupation)
 GO
